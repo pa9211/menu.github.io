@@ -14,7 +14,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #71b7e6, #0c0879);
+  background-image: url('/images/freepik__animated-traffic-sign-against-a-textured-blue-wall__73166.jpeg');
+  background-size: cover;
 }
 
 .slide-container {
@@ -115,4 +116,46 @@ body {
 
 .button:hover {
     background: #71b7e6;
+}
+
+/* 🌐 Responsive Design for Desktop & Mobile */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+    background-position: center;
+  }
+
+  .slide-content {
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card-image {
+    height: 120px;
+    width: 120px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .descripton {
+    font-size: 13px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+@media (min-width: 769px) {
+  .card {
+    width: 250px;
+  }
 }

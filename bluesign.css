@@ -8,7 +8,8 @@
 }
 
 body {
-    background: rgb(255, 255, 255);
+    background-image: url('/images/WhatsApp\ Image\ 2025-07-22\ at\ 20.10.57_a784907a.jpg');
+    background-size: cover;
 }
 
 .carousel {
@@ -111,4 +112,90 @@ body {
     margin: 0 10px;
     font-size: 50px;
     color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel {
+    padding: 0 5%;
+  }
+
+  .box-info {
+    width: 90%;
+    height: auto;
+  }
+
+  .info h2 {
+    font-size: 36px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+  .info .btn {
+    width: 160px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .item img {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info h2 {
+    font-size: 28px;
+  }
+
+  .info p {
+    font-size: 13px;
+  }
+
+  .info .btn {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .navigation span {
+    width: 45px;
+    height: 45px;
+    font-size: 36px;
+  }
+
+  .item img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info h2 {
+    font-size: 24px;
+  }
+
+  .info p {
+    font-size: 12px;
+  }
+
+  .info .btn {
+    width: 120px;
+    height: 38px;
+    font-size: 11px;
+  }
+
+  .navigation {
+    bottom: 5%;
+  }
+
+  .navigation span {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    margin: 0 5px;
+  }
+
+  .item img {
+    max-width: 100%;
+  }
 }
