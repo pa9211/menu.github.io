@@ -10,31 +10,31 @@
 <body>
     <div class="container">
         <div class="title">Registration</div>
-        <form action="mode.html">
+        <form id="registration-form" action="https://script.google.com/macros/s/AKfycbyOUtxETng_o4BFkxFkTO2N1QGOjwEnpV_7KArnthl4Yxl3yFgkGwfB9IRE1W4sNBWX/exec" method="post">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Full Name</span>
-                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="text" name="full_name" placeholder="Enter Your Name" required>
                 </div>
                  <div class="input-box">
                     <span class="details">age</span>
-                    <input type="text" placeholder="Enter Your age" required>
+                    <input type="text" name="age" placeholder="Enter Your age" required>
                 </div>
                  <div class="input-box">
-                    <span class="details"> birth day</span>
-                    <input type="text" placeholder="Enter Your birth day" required>
+                    <span class="details">birth day</span>
+                    <input type="text" name="birth_day" placeholder="Enter Your birth day" required>
                 </div>
                  <div class="input-box">
                     <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter Phone Number" required>
+                    <input type="text" name="phone" placeholder="Enter Phone Number" required>
                 </div>
                  <div class="input-box">
                     <span class="details"> school </span>
-                    <input type="text" placeholder="Enter your school" required>
+                    <input type="text" name="school" placeholder="Enter your school" required>
                 </div> 
                  <div class="input-box">
                     <span class="details"> Grade </span>
-                    <input type="text" placeholder="Enter your grade" required>
+                    <input type="text" name="grade" placeholder="Enter your grade" required>
                 </div>
             </div>
             <div class="gender-details">
@@ -58,9 +58,18 @@
                 </div>
             </div>
             <div class="button">
-                <form action="mode.html"><input type="submit" value="Register"></form>
+               <input type="submit" value="Register">
             </div>
         </form>
     </div>
+
+<script>
+  document.getElementById("registration-form").addEventListener("submit", function () {
+    setTimeout(function () {
+      window.location.replace("mode.html"); // arahkan ke file lokal
+    }, 1500);
+  });
+</script>
+
 </body>
 </html>
