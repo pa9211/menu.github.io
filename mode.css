@@ -163,3 +163,103 @@ body {
 .card2 .buttons button:hover {
     background: #fff;
 }
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .card {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .card .card-content {
+    padding: 20px;
+  }
+
+  .card .image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name-profesion .kamus,
+  .name-profesion .rambu {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .card .button {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card .button button {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+
+/* Media query untuk perangkat berukuran kecil seperti smartphone */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+  }
+
+  .card, .card2 {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .card .card-content,
+  .card2 .card-content2 {
+    padding: 20px;
+  }
+
+  .card .button,
+  .card2 .buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card .button button,
+  .card2 .buttons button {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .card .image, 
+  .card2 .images {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name-profesion .kamus,
+  .name-profesion .rambu,
+  .name-Games .Games,
+  .name-Games .Rambu {
+    font-size: 24px;
+    text-align: center;
+  }
+}
